@@ -1,0 +1,9 @@
+<batch-execution lookup="defaultKieSession">
+	<insert out-identifier="m" return-object="true" entrypoint="DEFAULT">
+	    <com.pwc.testrulz.PaymentInfo>
+	        <moneyAmount>5000</moneyAmount>
+	        <decisionPath></decisionPath>
+	    </com.pwc.testrulz.PaymentInfo>
+	</insert>
+	<fire-all-rules/>
+</batch-execution>
